@@ -1,13 +1,14 @@
 name: Mint CI - ver/1.21.1
 
 on:
+  workflow_dispatch:
   push:
     branches: [ "ver/1.21.1" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment: default
+    environment: 默认
 
     steps:
       - name: Checkout Git Repository
